@@ -105,20 +105,3 @@
 		reg = <0x5f80000 0x2080000>;
 	};
 };
-
-&mdio0 {
-	phy4: ethernet-phy@4 {
-		reg = <4>;
-	};
-};
-
-&gmac1 {
-	qcom,phy-mdio-addr = <4>;
-	qcom,poll-required = <1>;
-	qcom,rgmii-delay = <0>;
-};
-
-/* LAN */
-&gmac2 {
-	qcom,phy-mdio-addr = <0>;	
-};
